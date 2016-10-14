@@ -1,0 +1,199 @@
+2016-09-15 18:20:36 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destilados.model' doesn't exist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'model', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('model', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('model')
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'model', 'Model')
+#7 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Model')
+#8 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Model')
+#9 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('Model', 0)
+#10 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('Model')
+#12 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
+2016-09-15 18:28:37 Error: [Cake\Console\Exception\MissingShellException] Shell class for "All" could not be found.
+Exception Attributes: array (
+  'class' => 'All',
+)
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('all')
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-09-15 18:28:46 Error: [Cake\Console\Exception\MissingShellException] Shell class for "All" could not be found.
+Exception Attributes: array (
+  'class' => 'All',
+)
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('All')
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-09-20 14:21:56 Warning: Warning (512): Association property name "status" clashes with field of same name of table "entrega". You should explicitly specify the "propertyName" option. in [/Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Association.php, line 455]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\ORM\Association::property() - CORE/src/ORM/Association.php, line 455
+Bake\Utility\Model\AssociationFilter::filterAssociations() - ROOT/vendor/cakephp/bake/src/Utility/Model/AssociationFilter.php, line 96
+Bake\Shell\Task\TemplateTask::_filteredAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 473
+Bake\Shell\Task\TemplateTask::_loadController() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 298
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 148
+Bake\Shell\Task\TemplateTask::all() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 259
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 452
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 459
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2016-09-20 14:22:01 Warning: Warning (512): Association property name "status" clashes with field of same name of table "pedidos". You should explicitly specify the "propertyName" option. in [/Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Association.php, line 455]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\ORM\Association::property() - CORE/src/ORM/Association.php, line 455
+Bake\Utility\Model\AssociationFilter::filterAssociations() - ROOT/vendor/cakephp/bake/src/Utility/Model/AssociationFilter.php, line 96
+Bake\Shell\Task\TemplateTask::_filteredAssociations() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 473
+Bake\Shell\Task\TemplateTask::_loadController() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 298
+Bake\Shell\Task\TemplateTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 148
+Bake\Shell\Task\TemplateTask::all() - ROOT/vendor/cakephp/bake/src/Shell/Task/TemplateTask.php, line 259
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 452
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 459
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2016-09-20 16:29:32 Warning: Warning (512): Association property name "status" clashes with field of same name of table "pedidos". You should explicitly specify the "propertyName" option. in [/Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Association.php, line 455]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+Cake\ORM\Association::property() - CORE/src/ORM/Association.php, line 455
+Bake\Shell\Task\ModelTask::getEntityPropertySchema() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 510
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 132
+Bake\Shell\Task\ModelTask::bake() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 110
+Bake\Shell\Task\ModelTask::main() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 97
+Bake\Shell\Task\ModelTask::all() - ROOT/vendor/cakephp/bake/src/Shell/Task/ModelTask.php, line 165
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 452
+Cake\Console\Shell::runCommand() - CORE/src/Console/Shell.php, line 459
+Cake\Console\ShellDispatcher::_dispatch() - CORE/src/Console/ShellDispatcher.php, line 227
+Cake\Console\ShellDispatcher::dispatch() - CORE/src/Console/ShellDispatcher.php, line 182
+Cake\Console\ShellDispatcher::run() - CORE/src/Console/ShellDispatcher.php, line 128
+[main] - ROOT/bin/cake.php, line 34
+
+
+
+2016-09-20 17:27:46 Error: [Cake\Console\Exception\MissingShellException] Shell class for "List" could not be found.
+Exception Attributes: array (
+  'class' => 'List',
+)
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('list')
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-09-20 17:27:53 Error: [Cake\Console\Exception\MissingShellException] Shell class for "-l" could not be found.
+Exception Attributes: array (
+  'class' => '-l',
+)
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('-l')
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-09-20 17:27:58 Error: [Cake\Console\Exception\MissingShellException] Shell class for "All" could not be found.
+Exception Attributes: array (
+  'class' => 'All',
+)
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(223): Cake\Console\ShellDispatcher->findShell('all')
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
+2016-09-22 19:22:33 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destilados.tipo_pessoas' doesn't exist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'tipo_pessoas', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('tipo_pessoas', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('tipo_pessoas')
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'tipo_pessoas', 'TipoPessoas')
+#7 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('TipoPessoas')
+#8 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(165): Bake\Shell\Task\ModelTask->main('tipoPessoas')
+#9 [internal function]: Bake\Shell\Task\ModelTask->all()
+#10 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(459): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2016-09-22 19:23:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destilados.tipo_pessoas' doesn't exist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'tipo_pessoas', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('tipo_pessoas', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('tipo_pessoas')
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'tipo_pessoas', 'TipoPessoas')
+#7 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('TipoPessoas')
+#8 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(165): Bake\Shell\Task\ModelTask->main('tipoPessoas')
+#9 [internal function]: Bake\Shell\Task\ModelTask->all()
+#10 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(459): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2016-09-22 19:28:46 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destilados.tipo_pessoas' doesn't exist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'tipo_pessoas', Array, Object(Cake\Database\Schema\Table))
+#1 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(63): Cake\Database\Schema\Collection->describe('tipo_pessoas', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(440): Cake\Database\Schema\CachedCollection->describe('tipo_pessoas')
+#3 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/ORM/Table.php(518): Cake\ORM\Table->schema()
+#4 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'tipo_pessoas', 'TipoPessoas')
+#7 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('TipoPessoas')
+#8 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(165): Bake\Shell\Task\ModelTask->main('tipoPessoas')
+#9 [internal function]: Bake\Shell\Task\ModelTask->all()
+#10 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(452): call_user_func_array(Array, Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/Shell.php(459): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/destilados/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/destilados/bin/cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+

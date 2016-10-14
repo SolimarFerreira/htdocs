@@ -1,0 +1,1 @@
+<?php return ['inputContainer' => '<div class="form-group"><div class="input-group date"><div class="input-group-addon"><i class="fa fa-calendar"></i></div>{{content}}</div></div>'];
