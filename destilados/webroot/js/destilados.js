@@ -7,7 +7,6 @@ function currencyMask(element){
     });
 }
 $(function () {
-
     currencyMask('.currency');
 
     //Date picker
@@ -39,8 +38,8 @@ $(function () {
 
                     $('.table_produtos:eq(1) tbody').append('<tr><td>' + v.nome +'</td>' +
                         '<td>' + v.descricao+'</td>' +
-                        '<td><input type="number" name="quantidade" min="1" max="500"></td>' +
-                        '<td><input type="text" class="currency"  name="valor"></td></tr>');
+                        '<td><input type="number" name="quantidade" onchange="txtChanged()" min="1" max="500"></td>' +
+                        '<td><input type="text" class="currency soma"  id="soma" name="valor"></td></tr>');
                 })
                 $produtosSelecionados = list;
                 console.log($produtosSelecionados);
@@ -49,15 +48,25 @@ $(function () {
             $('.table_produtos').show();
             $('#myModal').modal('hide');
         });
-
-
     });
 
     $('#salvarteste').on('click' , function(){
-        alert('jsdbjksd');
+        alert('etetetfhfu');
     });
+
+
+
+    // $('#soma').on('click' , function(){
+    //     alert('somou');
+    // });
 
     $('.openModal').on('click' , function(){
         $('.modal table').show();
     });
 });
+
+function txtChanged()
+{
+    var bla = $('#txt_name').val();
+    alert('somou');
+}
